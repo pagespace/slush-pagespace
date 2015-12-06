@@ -58,8 +58,13 @@ new-pagespace-site/
 
 ### Development
 
-Run `npm start` to start your Pagespace server, then go to [http://localhost:3000](http://localhost:3000). Customize
-the port in `bin/www`
+Run `npm start` to start your Pagespace server.
 
 The Pagespace middleware configuration in `app.js` is for simple local development. More advanced configuration 
 is also available which more suitable for other setups such as production.
+
+### Next steps
+
+Start by going to [http://localhost:3000/_dashboard](http://localhost:3000/_dashboard) 
+
+Login with `admin / admin` and start working with Pagespace by importing templates and plugins.
