@@ -1,0 +1,22 @@
+{
+  "name": "slush-pagespace",
+  "version": "1.0.0",
+  "description": "Slush generator for Express apps with Pagespace middleware",
+  "keywords": [
+    "pagespace",
+    "slushgenerator"
+  ],
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-conflict": "^0.4.0",
+    "gulp-install": "^0.6.0",
+    "gulp-template": "^3.1.0",
+    "inquirer": "^0.11.0"
+  },
+  "author": "Phil Mander",
+  "license": "MIT"
+}
