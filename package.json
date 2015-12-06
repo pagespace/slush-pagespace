@@ -6,7 +6,11 @@
     "pagespace",
     "slushgenerator"
   ],
-  "private": true,
+  "main": "slushfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:pagespace/slush-pagespace"
+  },
   "scripts": {
     "start": "node ./bin/www"
   },
