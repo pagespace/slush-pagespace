@@ -1,0 +1,412 @@
+@charset "UTF-8";
+/* -- Reset ---------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+i,
+em {
+  font-style: oblique; }
+
+b,
+strong {
+  font-weight: bold; }
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  src: local("Raleway ExtraLight"), local("Raleway-ExtraLight"), url(fonts/raleway-extralight.woff2) format("woff2");
+  unicode-range: U0-0FF, U131, U152-153, U2C 6, U2DA, U2DC, U2000-206F, U2074, U20AC, U2212, U2215, UE0FF, UEFFD, UF000; }
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Raleway"), url(fonts/raleway-normal.woff2) format("woff2");
+  unicode-range: U0-0FF, U131, U152-153, U2C 6, U2DA, U2DC, U2000-206F, U2074, U20AC, U2212, U2215, UE0FF, UEFFD, UF000; }
+
+.wysiwyg-text-align-left {
+  text-align: left; }
+
+.wysiwyg-text-align-right {
+  text-align: right; }
+
+.wysiwyg-text-align-justify {
+  text-align: justify; }
+
+.wysiwyg-align-top {
+  vertical-align: top; }
+
+.wysiwyg-align-middle {
+  vertical-align: middle; }
+
+.wysiwyg-align-bottom {
+  vertical-align: bottom; }
+
+.wysiwyg-float-right {
+  float: right;
+  margin-left: 10px; }
+
+.wysiwyg-float-left {
+  float: left;
+  margin-right: 10px; }
+
+@media (max-width: 1127px) {
+  html {
+    background: #1d1815 url(img/loveday-mob-bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; } }
+
+@media (min-width: 1128px) {
+  html {
+    background: #1d1815 url(img/loveday-home-bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; } }
+
+body {
+  font-family: sans-serif; }
+  @media (max-width: 1127px) {
+    body {
+      padding: 30px 10px; } }
+  @media (min-width: 1128px) {
+    body {
+      padding: 65px 4%;
+      overflow: hidden;
+      min-height: 860px; } }
+
+h1 {
+  font-weight: 200;
+  font-family: Raleway, Helvetica, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 63px;
+  letter-spacing: 5px;
+  line-height: 1.1em; }
+
+h1 a {
+  color: #fff;
+  text-decoration: none; }
+
+h2 {
+  font-weight: 200;
+  font-family: Raleway, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 38px;
+  letter-spacing: 5px;
+  margin-bottom: 0.5em;
+  line-height: 1.4em; }
+
+h3 {
+  font-family: Raleway, Helvetica, sans-serif;
+  margin-top: 1em;
+  font-size: 26px;
+  line-height: 1.8em; }
+
+h3:first-child {
+  margin-top: 0; }
+
+@media (max-width: 1127px) {
+  .header {
+    text-align: center; } }
+
+@media (min-width: 1128px) {
+  .header {
+    position: fixed;
+    width: 29%;
+    top: 0;
+    height: 75%;
+    padding-top: 65px; } }
+
+.main-nav {
+  margin-top: 54px; }
+
+.main-nav a {
+  font-weight: 400;
+  font-family: Raleway, Helvetica, sans-serif;
+  color: #FFF;
+  font-size: 38px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 1.8em;
+  text-decoration: none; }
+
+.main-nav .active a,
+.main-nav .active a:hover {
+  color: #B15D79; }
+
+.main-nav a:hover {
+  color: #E69AB4; }
+
+.home-image img {
+  display: none;
+  margin: 22px auto;
+  width: 90%;
+  height: auto;
+  max-width: 600px;
+  outline: 1px solid #fff; }
+
+@media (max-width: 1127px) {
+  .main-nav {
+    margin-top: 22px; }
+  .main-nav li {
+    display: inline-block;
+    margin-left: 1em; }
+  .main-nav li:first-child {
+    display: inline-block;
+    margin-left: 0; }
+  .main-nav a {
+    font-size: 22px; }
+  .home-image img {
+    display: block; }
+  .with-content .home-image img {
+    display: none; } }
+
+@media (max-width: 1127px) {
+  .footer {
+    text-align: center;
+    margin-top: 30px; } }
+
+@media (min-width: 1128px) {
+  .footer {
+    position: fixed;
+    width: 29%;
+    bottom: 0;
+    max-height: 25%;
+    padding-bottom: 65px; } }
+
+@media (min-width: 1128px) and (max-height: 760px) {
+  .footer {
+    display: none; } }
+
+.contact {
+  font-family: Raleway, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.5em; }
+
+.contact p {
+  line-height: 1.7em;
+  letter-spacing: 2px; }
+
+.contact a {
+  color: #fff;
+  text-decoration: none; }
+
+.contact a:hover {
+  text-decoration: underline; }
+
+.main-wrap {
+  position: fixed;
+  padding: 51px 0 72px 0;
+  top: 0;
+  right: 0;
+  left: 34%;
+  bottom: 0;
+  background: rgba(60, 60, 60, 0.8); }
+
+.main {
+  color: #584A4F;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1em; }
+  @media (min-width: 1128px) {
+    .main {
+      position: fixed;
+      padding: 67px 57px 72px 57px;
+      top: 0;
+      right: 0;
+      left: 34%;
+      bottom: 0;
+      overflow: auto; } }
+
+@media (max-width: 1127px) {
+  .main {
+    margin-top: 30px; } }
+
+.content p,
+.content li {
+  margin-top: 1em;
+  font-size: 18px;
+  line-height: 1.8em; }
+
+.content p:first-child {
+  margin-top: 0; }
+
+.content h3 img,
+.content p img {
+  margin-top: 8px; }
+
+.content h3 + p > img {
+  margin-top: -1em; }
+
+.content img.wysiwyg-float-left {
+  margin-right: 15px; }
+
+.content img.wysiwyg-float-right {
+  margin-left: 15px; }
+
+.content li {
+  margin-top: 0.5em;
+  margin-left: 21px;
+  list-style: disc; }
+
+.content table {
+  border-collapse: separate;
+  border-spacing: 3px;
+  width: 100%; }
+
+.content th,
+.content td {
+  padding: 8px;
+  text-align: left;
+  background: #FDFDFD;
+  line-height: 1.6em; }
+
+.content th {
+  font-weight: bold; }
+
+.inner-menu {
+  margin-bottom: 2em; }
+
+.inner-menu li {
+  display: inline-block;
+  margin-right: 22px;
+  font-size: 20px;
+  line-height: 1.8em; }
+
+.inner-menu a {
+  text-decoration: none;
+  color: #584A4F; }
+
+.inner-menu a {
+  color: #B15D79; }
+
+.inner-menu .active a,
+.inner-menu a:hover {
+  color: #E69AB4; }
+
+.content {
+  max-width: 830px; }
+
+.content a {
+  color: #329AC5;
+  text-decoration: none; }
+
+.content a:hover,
+.content a:active {
+  color: #85C1DA;
+  text-decoration: underline; }
+
+.webcopy:before,
+.webcopy:after {
+  content: " ";
+  display: table; }
+
+p.date {
+  margin-top: 0;
+  color: #808080; }
+
+p.date + .content {
+  margin-top: 1em; }
+
+.web-copy-aggregator .webcopy {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #cbcbcb; }
+
+.video-scale {
+  max-width: 500px; }
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  margin-top: 1em; }
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.webcopy:after {
+  clear: both; }
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 2px solid #E69AB4;
+  margin: 1em 0;
+  padding: 0.5em 10px;
+  quotes: "“" "”";
+  box-shadow: 1px 4px 22px -8px #291F1E; }
+
+blockquote:before {
+  color: #E69AB4;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.2em;
+  vertical-align: -0.4em; }
+
+blockquote p:first-child {
+  display: inline; }
+
+h2.post-heading {
+  margin-top: 1em;
+  font-size: 34px; }
+
+.pagespace-post .date {
+  margin-bottom: 1em; }
+
+.pagespace-post:first-child {
+  border: none;
+  margin-top: 0; }
+
+.pagespace-post {
+  border-top: 1px solid #DCDCDC;
+  margin-top: 2em; }
