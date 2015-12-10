@@ -14,7 +14,7 @@ app.use(/^(?!\/_static).+/, [ bodyParser.json(), cookieParser(), session({secret
 app.set('view engine', 'hbs');
 
 //serve custom statics
-app.use(express.static(__dirname + 'theme/assets'));
+app.use(express.static(__dirname + '/theme/assets'));
 
 // view engine setup
 app.set('views', [ pagespace.getViewDir(), path.join(__dirname, 'theme/templates') ]);
