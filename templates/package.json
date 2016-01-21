@@ -12,11 +12,11 @@
       "serve-favicon": "~2.3.0",
       "express": "~4.13.1",
       "express-session": "^1.11.3",
-      "pagespace": "1.0.0",
-      "pagespace-html": "pagespace/pagespace-html",
-      "pagespace-markdown": "pagespace/pagespace-markdown",
-      "pagespace-nav": "pagespace/pagespace-nav",
-      "pagespace-posts": "pagespace/pagespace-posts",
-      "pagespace-webcopy": "pagespace/pagespace-webcopy"
+      "pagespace": "latest",
+      "pagespace-html": "latest",
+      "pagespace-markdown": "latest",
+      "pagespace-nav": "latest",
+      "pagespace-posts": "latest",
+      "pagespace-webcopy": "latest"
   }
 }
