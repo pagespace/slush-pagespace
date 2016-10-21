@@ -1,6 +1,6 @@
 {
   "name": "slush-pagespace",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Slush generator for Express apps with Pagespace middleware",
   "keywords": [
     "pagespace",
